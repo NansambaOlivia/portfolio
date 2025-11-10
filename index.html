@@ -48,6 +48,9 @@
         
         .card-hover {
             transition: all 0.3s ease;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
         
         .card-hover:hover {
@@ -125,40 +128,42 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
+    <section id="about" class="py-20 relative bg-cover bg-center bg-fixed" style="background-image: url('images/homeimage.jpg');">
+        <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+        <div class="relative">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-deep-navy mb-4">About Me</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">About Me</h2>
                 <div class="w-20 h-1 bg-cyan mx-auto"></div>
             </div>
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <div class="w-64 h-64 bg-gray-100 rounded-full mx-auto overflow-hidden shadow-lg">
+                    <div class="w-64 h-64 bg-white/10 backdrop-blur rounded-full mx-auto overflow-hidden shadow-lg">
                         <img src="images/img.proff.jpeg" alt="Nansamba Olivia - Software Developer" class="w-full h-full object-cover">
                     </div>
                 </div>
                 <div>
-                    <h3 class="text-2xl font-bold text-deep-navy mb-6">Hi! I'm Olivia</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
+                    <h3 class="text-2xl font-bold text-white mb-6">Hi! I'm Olivia</h3>
+                    <p class="text-white mb-6 leading-relaxed">
                         I'm a software Developer passionate about building clean, scalable applications using Python and Django.
                     </p>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
+                    <p class="text-white mb-6 leading-relaxed">
                         I enjoy turning ideas into functional products that make people's lives easier.
                     </p>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
+                    <p class="text-white mb-6 leading-relaxed">
                         Lately, I've been focusing on data-driven solutions — using insights to guide smarter app design.
                     </p>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
+                    <p class="text-white mb-6 leading-relaxed">
                         I'm eager to keep learning, collaborate on innovative projects, and grow into a full-stack developer.
                     </p>
                     <div class="grid grid-cols-2 gap-4">
-                        <div class="bg-gray-100 p-4 rounded-lg">
-                            <h4 class="font-semibold text-deep-navy mb-2">Education</h4>
-                            <p class="text-sm text-gray-600">Bachelor of Information Systems and Technology<br>Makerere University 2022</p>
+                        <div class="bg-white/10 p-4 rounded-lg backdrop-blur border border-white/10">
+                            <h4 class="font-semibold text-white mb-2">Education</h4>
+                            <p class="text-sm text-white/90">Bachelor of Information Systems and Technology<br>Makerere University 2022</p>
                         </div>
-                        <div class="bg-gray-100 p-4 rounded-lg">
-                            <h4 class="font-semibold text-deep-navy mb-2">Location</h4>
-                            <p class="text-sm text-gray-600">Kampala, Uganda<br>Open to Remote</p>
+                        <div class="bg-white/10 p-4 rounded-lg backdrop-blur border border-white/10">
+                            <h4 class="font-semibold text-white mb-2">Location</h4>
+                            <p class="text-sm text-white/90">Kampala, Uganda<br>Open to Remote</p>
                         </div>
                     </div>
                 </div>
@@ -167,106 +172,108 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="py-20 bg-gray-100">
+    <section id="skills" class="py-20 relative bg-cover bg-center bg-fixed" style="background-image: url('images/homeimage.jpg');">
+        <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+        <div class="relative">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-deep-navy mb-4">Skills & Technologies</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Skills & Technologies</h2>
                 <div class="w-20 h-1 bg-cyan mx-auto"></div>
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Frontend -->
-                <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
-                    <h3 class="text-xl font-bold text-deep-navy mb-6 text-center">Frontend</h3>
+                <div class=
+                    <h3 class="text-2xl font-bold text-white mb-6 text-center bg-cyan/30 py-2 px-4 rounded-lg inline-block shadow-lg" style="color: white !important;">Frontend</h3>
                     <div class="grid grid-cols-2 gap-4">
-                        <div class="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="flex flex-col items-center p-4 hover:bg-white/10 rounded-lg transition-colors backdrop-blur-sm border border-white/10">
                             <i class="fab fa-html5 text-4xl text-orange-500 mb-2"></i>
-                            <span class="text-gray-700">HTML5</span>
+                            <span class="text-white">HTML5</span>
                         </div>
-                        <div class="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="flex flex-col items-center p-4 hover:bg-white/10 rounded-lg transition-colors backdrop-blur-sm border border-white/10">
                             <i class="fab fa-css3-alt text-4xl text-blue-500 mb-2"></i>
-                            <span class="text-gray-700">CSS3</span>
+                            <span class="text-white">CSS3</span>
                         </div>
-                        <div class="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="flex flex-col items-center p-4 hover:bg-white/10 rounded-lg transition-colors backdrop-blur-sm border border-white/10">
                             <i class="fab fa-js text-4xl text-yellow-400 mb-2"></i>
-                            <span class="text-gray-700">JavaScript</span>
+                            <span class="text-white">JavaScript</span>
                         </div>
-                        <div class="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="flex flex-col items-center p-4 hover:bg-white/10 rounded-lg transition-colors backdrop-blur-sm border border-white/10">
                             <i class="fab fa-react text-4xl text-cyan-500 mb-2"></i>
-                            <span class="text-gray-700">React</span>
+                            <span class="text-white">React</span>
                         </div>
-                        <div class="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="flex flex-col items-center p-4 hover:bg-white/10 rounded-lg transition-colors backdrop-blur-sm border border-white/10">
                             <i class="fab fa-react text-4xl text-blue-400 mb-2"></i>
-                            <span class="text-gray-700">React Native</span>
+                            <span class="text-white">React Native</span>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Backend & Databases -->
-                <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
-                    <h3 class="text-xl font-bold text-deep-navy mb-6 text-center">Backend & Databases</h3>
+                <div class=
+                    <h3 class="text-2xl font-bold text-white mb-6 text-center bg-cyan/30 py-2 px-4 rounded-lg inline-block shadow-lg" style="color: white !important;">Backend & Databases</h3>
                     <div class="grid grid-cols-2 gap-4">
-                        <div class="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="flex flex-col items-center p-4 hover:bg-white/10 rounded-lg transition-colors backdrop-blur-sm border border-white/10">
                             <i class="fab fa-python text-4xl text-blue-600 mb-2"></i>
-                            <span class="text-gray-700">Python</span>
+                            <span class="text-white">Python</span>
                         </div>
-                        <div class="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="flex flex-col items-center p-4 hover:bg-white/10 rounded-lg transition-colors backdrop-blur-sm border border-white/10">
                             <i class="fas fa-bolt text-4xl text-green-600 mb-2"></i>
-                            <span class="text-gray-700">Django</span>
+                            <span class="text-white">Django</span>
                         </div>
-                        <div class="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="flex flex-col items-center p-4 hover:bg-white/10 rounded-lg transition-colors backdrop-blur-sm border border-white/10">
                             <i class="fas fa-database text-4xl text-orange-500 mb-2"></i>
-                            <span class="text-gray-700">Django REST</span>
+                            <span class="text-white">Django REST</span>
                         </div>
-                        <div class="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="flex flex-col items-center p-4 hover:bg-white/10 rounded-lg transition-colors backdrop-blur-sm border border-white/10">
                             <i class="fab fa-java text-4xl text-red-500 mb-2"></i>
-                            <span class="text-gray-700">Java</span>
+                            <span class="text-white">Java</span>
                         </div>
-                        <div class="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="flex flex-col items-center p-4 hover:bg-white/10 rounded-lg transition-colors backdrop-blur-sm border border-white/10">
                             <i class="fas fa-database text-4xl text-blue-400 mb-2"></i>
-                            <span class="text-gray-700">MySQL</span>
+                            <span class="text-white">MySQL</span>
                         </div>
-                        <div class="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="flex flex-col items-center p-4 hover:bg-white/10 rounded-lg transition-colors backdrop-blur-sm border border-white/10">
                             <i class="fas fa-server text-4xl text-red-400 mb-2"></i>
-                            <span class="text-gray-700">Oracle</span>
+                            <span class="text-white">Oracle</span>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Tools & Platforms -->
-                <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
-                    <h3 class="text-xl font-bold text-deep-navy mb-6 text-center">Tools & Platforms</h3>
+                <div class=
+                    <h3 class="text-2xl font-bold text-white mb-6 text-center bg-cyan/30 py-2 px-4 rounded-lg inline-block shadow-lg" style="color: white !important;">Tools & Platforms</h3>
                     <div class="grid grid-cols-2 gap-4">
-                        <div class="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="flex flex-col items-center p-4 hover:bg-white/10 rounded-lg transition-colors backdrop-blur-sm border border-white/10">
                             <i class="fab fa-github text-4xl text-gray-800 mb-2"></i>
-                            <span class="text-gray-700">GitHub</span>
+                            <span class="text-white">GitHub</span>
                         </div>
-                        <div class="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="flex flex-col items-center p-4 hover:bg-white/10 rounded-lg transition-colors backdrop-blur-sm border border-white/10">
                             <i class="fas fa-cloud text-4xl text-blue-400 mb-2"></i>
-                            <span class="text-gray-700">Render</span>
+                            <span class="text-white">Render</span>
                         </div>
-                        <div class="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="flex flex-col items-center p-4 hover:bg-white/10 rounded-lg transition-colors backdrop-blur-sm border border-white/10">
                             <i class="fas fa-database text-4xl text-green-500 mb-2"></i>
-                            <span class="text-gray-700">Supabase</span>
+                            <span class="text-white">Supabase</span>
                         </div>
-                        <div class="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="flex flex-col items-center p-4 hover:bg-white/10 rounded-lg transition-colors backdrop-blur-sm border border-white/10">
                             <i class="fas fa-leaf text-4xl text-green-400 mb-2"></i>
-                            <span class="text-gray-700">Neon DB</span>
+                            <span class="text-white">Neon DB</span>
                         </div>
-                        <div class="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="flex flex-col items-center p-4 hover:bg-white/10 rounded-lg transition-colors backdrop-blur-sm border border-white/10">
                             <i class="fab fa-trello text-4xl text-blue-500 mb-2"></i>
-                            <span class="text-gray-700">Trello</span>
+                            <span class="text-white">Trello</span>
                         </div>
-                        <div class="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="flex flex-col items-center p-4 hover:bg-white/10 rounded-lg transition-colors backdrop-blur-sm border border-white/10">
                             <i class="fab fa-slack text-4xl text-purple-500 mb-2"></i>
-                            <span class="text-gray-700">Slack</span>
+                            <span class="text-white">Slack</span>
                         </div>
-                        <div class="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="flex flex-col items-center p-4 hover:bg-white/10 rounded-lg transition-colors backdrop-blur-sm border border-white/10">
                             <i class="fas fa-file-alt text-4xl text-green-600 mb-2"></i>
-                            <span class="text-gray-700">Swagger</span>
+                            <span class="text-white">Swagger</span>
                         </div>
-                        <div class="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="flex flex-col items-center p-4 hover:bg-white/10 rounded-lg transition-colors backdrop-blur-sm border border-white/10">
                             <i class="fas fa-code text-4xl text-blue-600 mb-2"></i>
-                            <span class="text-gray-700">VS Code</span>
+                            <span class="text-white">VS Code</span>
                         </div>
                     </div>
                 </div>
@@ -275,43 +282,45 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-white">
+    <section id="projects" class="py-20 relative bg-cover bg-center bg-fixed" style="background-image: url('images/homeimage.jpg');">
+        <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+        <div class="relative">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-deep-navy mb-4">My Projects</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">My Projects</h2>
                 <div class="w-20 h-1 bg-cyan mx-auto"></div>
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white border border-gray-200 rounded-lg shadow-lg card-hover overflow-hidden">
-                    <div class="h-48 bg-white flex items-center justify-center p-4">
+                <div class="bg-white/10 backdrop-blur border border-white/10 rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-white/5 backdrop-blur flex items-center justify-center p-4">
                         <div class="text-center">
                             <img src="images/UmaCare_logo.png" alt="UMACare Logo" class="h-24 w-auto">
                         </div>
                     </div>
                     <div class="p-6">
-                        <p class="text-gray-600 mb-4">A mobile-first platform with two apps (client & caregiver) and an admin dashboard that makes finding and managing trusted caregivers effortless. Features include real-time chat, booking system, and secure payments.</p>
+                        <p class="text-white/90 mb-4">A mobile-first platform with two apps (client & caregiver) and an admin dashboard that makes finding and managing trusted caregivers effortless. Features include real-time chat, booking system, and secure payments.</p>
                         <div class="space-y-3 mb-4">
                             <div>
-                                <h4 class="font-semibold text-sm text-deep-navy mb-1">Frontend:</h4>
+                                <h4 class="font-semibold text-sm text-white mb-1">Frontend:</h4>
                                 <div class="flex flex-wrap gap-2">
-                                    <span class="bg-gray-100 text-deep-navy px-2 py-1 rounded text-xs">React</span>
-                                    <span class="bg-gray-100 text-deep-navy px-2 py-1 rounded text-xs">React Native</span>
-                                    <span class="bg-gray-100 text-deep-navy px-2 py-1 rounded text-xs">Node.js</span>
+                                    <span class="bg-white/20 text-white px-2 py-1 rounded text-xs">React</span>
+                                    <span class="bg-white/20 text-white px-2 py-1 rounded text-xs">React Native</span>
+                                    <span class="bg-white/20 text-white px-2 py-1 rounded text-xs">Node.js</span>
                                 </div>
                             </div>
                             <div>
-                                <h4 class="font-semibold text-sm text-deep-navy mb-1">Backend:</h4>
+                                <h4 class="font-semibold text-sm text-white mb-1">Backend:</h4>
                                 <div class="flex flex-wrap gap-2">
-                                    <span class="bg-gray-100 text-deep-navy px-2 py-1 rounded text-xs">Python</span>
-                                    <span class="bg-gray-100 text-deep-navy px-2 py-1 rounded text-xs">Django</span>
+                                    <span class="bg-white/20 text-white px-2 py-1 rounded text-xs">Python</span>
+                                    <span class="bg-white/20 text-white px-2 py-1 rounded text-xs">Django</span>
                                 </div>
                             </div>
                             <div>
-                                <h4 class="font-semibold text-sm text-deep-navy mb-1">Infrastructure:</h4>
+                                <h4 class="font-semibold text-sm text-white mb-1">Infrastructure:</h4>
                                 <div class="flex flex-wrap gap-2">
-                                    <span class="bg-gray-100 text-deep-navy px-2 py-1 rounded text-xs">Supabase</span>
-                                    <span class="bg-gray-100 text-deep-navy px-2 py-1 rounded text-xs">GitHub Actions</span>
-                                    <span class="bg-gray-100 text-deep-navy px-2 py-1 rounded text-xs">Render</span>
+                                    <span class="bg-white/20 text-white px-2 py-1 rounded text-xs">Supabase</span>
+                                    <span class="bg-white/20 text-white px-2 py-1 rounded text-xs">GitHub Actions</span>
+                                    <span class="bg-white/20 text-white px-2 py-1 rounded text-xs">Render</span>
                                 </div>
                             </div>
                         </div>
@@ -323,50 +332,50 @@
                     </div>
                 </div>
                 
-                <div class="bg-white border border-gray-200 rounded-lg shadow-lg card-hover overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-cyan to-cyan-dark flex items-center justify-center">
+                <div class="bg-white/10 backdrop-blur border border-white/10 rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-br from-cyan/80 to-cyan-dark/80 backdrop-blur flex items-center justify-center">
                         <svg class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M17,12C17,14.42 15.28,16.44 13,16.9V21H11V16.9C8.72,16.44 7,14.42 7,12C7,9.58 8.72,7.56 11,7.1V3H13V7.1C15.28,7.56 17,9.58 17,12M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"/>
                         </svg>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-deep-navy mb-2">Weather Dashboard</h3>
-                        <p class="text-gray-600 mb-4">Real-time weather application with location-based forecasts and interactive charts.</p>
+                        <h3 class="text-xl font-bold text-white mb-2">Weather Dashboard</h3>
+                        <p class="text-white/90 mb-4">Real-time weather application with location-based forecasts and interactive charts.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-gray-100 text-deep-navy px-2 py-1 rounded text-sm">JavaScript</span>
-                            <span class="bg-gray-100 text-deep-navy px-2 py-1 rounded text-sm">API</span>
-                            <span class="bg-gray-100 text-deep-navy px-2 py-1 rounded text-sm">Chart.js</span>
+                            <span class="bg-white/20 text-white px-2 py-1 rounded text-sm">JavaScript</span>
+                            <span class="bg-white/20 text-white px-2 py-1 rounded text-sm">API</span>
+                            <span class="bg-white/20 text-white px-2 py-1 rounded text-sm">Chart.js</span>
                         </div>
                         <div class="flex gap-2">
                             <button class="bg-cyan hover:bg-cyan-dark text-white px-4 py-2 rounded text-sm transition-colors">
                                 Live Demo
                             </button>
-                            <button class="border border-cyan text-cyan-dark hover:bg-cyan hover:text-white px-4 py-2 rounded text-sm transition-colors">
+                            <button class="border border-cyan text-white hover:bg-cyan hover:text-white px-4 py-2 rounded text-sm transition-colors">
                                 GitHub
                             </button>
                         </div>
                     </div>
                 </div>
                 
-                <div class="bg-white border border-gray-200 rounded-lg shadow-lg card-hover overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-gray-100 to-cyan-light flex items-center justify-center">
+                <div class="bg-white/10 backdrop-blur border border-white/10 rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-white/10 backdrop-blur flex items-center justify-center p-4">
                         <svg class="w-16 h-16 text-deep-navy" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M12,2A3,3 0 0,1 15,5V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V5A3,3 0 0,1 12,2M19,11C19,14.53 16.39,17.44 13,17.93V21H11V17.93C7.61,17.44 5,14.53 5,11H7A5,5 0 0,0 12,16A5,5 0 0,0 17,11H19Z"/>
                         </svg>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-deep-navy mb-2">Recipe Finder</h3>
-                        <p class="text-gray-600 mb-4">Search and discover recipes with ingredient filtering and nutritional information.</p>
+                        <h3 class="text-xl font-bold text-white mb-2">Recipe Finder</h3>
+                        <p class="text-white/90 mb-4">Search and discover recipes with ingredient filtering and nutritional information.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-gray-100 text-deep-navy px-2 py-1 rounded text-sm">Python</span>
-                            <span class="bg-gray-100 text-deep-navy px-2 py-1 rounded text-sm">Flask</span>
-                            <span class="bg-gray-100 text-deep-navy px-2 py-1 rounded text-sm">SQLite</span>
+                            <span class="bg-white/20 text-white px-2 py-1 rounded text-sm">Python</span>
+                            <span class="bg-white/20 text-white px-2 py-1 rounded text-sm">Flask</span>
+                            <span class="bg-white/20 text-white px-2 py-1 rounded text-sm">SQLite</span>
                         </div>
                         <div class="flex gap-2">
                             <button class="bg-cyan hover:bg-cyan-dark text-white px-4 py-2 rounded text-sm transition-colors">
                                 Live Demo
                             </button>
-                            <button class="border border-cyan text-cyan-dark hover:bg-cyan hover:text-white px-4 py-2 rounded text-sm transition-colors">
+                            <button class="border border-cyan text-white hover:bg-cyan hover:text-white px-4 py-2 rounded text-sm transition-colors">
                                 GitHub
                             </button>
                         </div>
@@ -377,17 +386,19 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-100">
+    <section id="contact" class="py-20 relative bg-cover bg-center bg-fixed" style="background-image: url('images/homeimage.jpg');">
+        <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+        <div class="relative">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-deep-navy mb-4">Get In Touch</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4" style="color: white;">Get in Touch</h2>
                 <div class="w-20 h-1 bg-cyan mx-auto mb-6"></div>
-                <p class="text-gray-600 text-lg">I'm always open to discussing new opportunities and interesting projects!</p>
+                <p class="text-white text-lg">I'm always open to discussing new opportunities and interesting projects!</p>
             </div>
             
             <div class="grid md:grid-cols-2 gap-12">
                 <div>
-                    <h3 class="text-2xl font-bold text-deep-navy mb-6">Let's Connect</h3>
+                    <h3 class="text-2xl font-bold text-white mb-6">Let's Connect</h3>
                     <div class="space-y-4">
                         <div class="flex items-center">
                             <div class="w-12 h-12 bg-cyan rounded-lg flex items-center justify-center mr-4">
@@ -396,8 +407,8 @@
                                 </svg>
                             </div>
                             <div>
-                                <p class="font-semibold text-deep-navy">Email</p>
-                                <p class="text-gray-600">nansambaolivia300@gmail.com</p>
+                                <p class="font-semibold text-white">Email</p>
+                                <p class="text-gray-200">nansambaolivia300@gmail.com</p>
                             </div>
                         </div>
                         
@@ -408,8 +419,8 @@
                                 </svg>
                             </div>
                             <div>
-                                <p class="font-semibold text-deep-navy">LinkedIn</p>
-                                <a href="https://www.linkedin.com/in/nansamba-olivia-2234a6355/" target="_blank" class="text-gray-600 hover:text-cyan-600 transition-colors">linkedin.com/in/nansamba-olivia</a>
+                                <p class="font-semibold text-white">LinkedIn</p>
+                                <a href="https://www.linkedin.com/in/nansamba-olivia-2234a6355/" target="_blank" class="text-gray-200 hover:text-cyan-400 transition-colors">linkedin.com/in/nansamba-olivia</a>
                             </div>
                         </div>
                         
@@ -420,25 +431,25 @@
                                 </svg>
                             </div>
                             <div>
-                                <p class="font-semibold text-deep-navy">GitHub</p>
-                                <a href="https://github.com/NansambaOlivia" target="_blank" class="text-gray-600 hover:text-cyan-600 transition-colors">github.com/NansambaOlivia</a>
+                                <p class="font-semibold text-white">GitHub</p>
+                                <a href="https://github.com/NansambaOlivia" target="_blank" class="text-gray-200 hover:text-cyan-400 transition-colors">github.com/NansambaOlivia</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="bg-white p-8 rounded-lg shadow-lg">
+                <div class="bg-white/10 backdrop-blur p-8 rounded-lg shadow-lg border border-white/10">
                     <form id="contact-form">
                         <div class="mb-6">
-                            <label for="name" class="block text-deep-navy font-semibold mb-2">Name</label>
+                            <label for="name" class="block text-white font-semibold mb-2">Name</label>
                             <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-cyan">
                         </div>
                         <div class="mb-6">
-                            <label for="email" class="block text-deep-navy font-semibold mb-2">Email</label>
+                            <label for="email" class="block text-white font-semibold mb-2">Email</label>
                             <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-cyan">
                         </div>
                         <div class="mb-6">
-                            <label for="message" class="block text-deep-navy font-semibold mb-2">Message</label>
+                            <label for="message" class="block text-white font-semibold mb-2">Message</label>
                             <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-cyan resize-none"></textarea>
                         </div>
                         <button type="submit" class="w-full bg-cyan hover:bg-cyan-dark text-white py-3 rounded-lg font-semibold transition-colors">
